@@ -1,0 +1,13 @@
+# Project Intelligence & Rules for Interactive Web Dev Tutorial App
+
+*This file captures project-specific patterns, user preferences, critical implementation details, and other learned intelligence to improve development consistency and efficiency.*
+
+*(Initially empty - patterns will be added as they are discovered or defined)*
+
+---
+* **Memory Bank Structure:** Always maintain the core files (`projectbrief.md`, `productContext.md`, `systemPatterns.md`, `techContext.md`, `activeContext.md`, `progress.md`) in `memory-bank/`. Read ALL on session start. Update after significant changes or when requested via "update memory bank".
+* **Beginner Focus:** Prioritize clarity and simplicity in code and explanations. Avoid unnecessary complexity. Explain jargon.
+* **UI Library:** Use Material UI components consistently.
+* **State Management:** Use React Context API (`TutorialContext`) and Local Storage for progress/achievements.
+* **Code Comments:** Add thorough comments explaining the "why" behind code sections, especially for beginners.
+* **Simulation:** Clearly distinguish between simulated actions (like CLI commands within the app) and real actions the user needs to perform.
