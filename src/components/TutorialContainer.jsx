@@ -56,7 +56,8 @@ const TutorialContainer = () => {
       case 'text':
         return <Typography variant="body1" paragraph>{contentItem.value}</Typography>;
       case 'code':
-        return <CodeBlock language={contentItem.language} code={contentItem.value} />;
+        // Pass contentItem.code, not contentItem.value
+        return <CodeBlock language={contentItem.language} code={contentItem.code} />;
       case 'list':
         return (
           // Inner list items still need keys
