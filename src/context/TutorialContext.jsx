@@ -166,6 +166,20 @@ export const TutorialProvider = ({ children, tutorialSteps }) => {
   };
 
   /**
+   * Navigates directly to a specific step index.
+   * Ensures the index is within the valid range of steps.
+   * @param {number} index - The index of the step to navigate to.
+   */
+  const goToStep = (index) => {
+    // Ensure the target index is valid (between 0 and the last step index)
+    const newIndex = Math.max(0, Math.min(index, tutorialSteps.length - 1));
+    setCurrentStepIndex(newIndex);
+    // Note: We don't automatically mark steps complete or award achievements when jumping directly.
+    // This is typically handled by sequential progression via goToNextStep.
+  };
+
+
+  /**
    * Resets all tutorial progress, including the current step, completed steps,
    * earned achievements, and clears the corresponding data from Local Storage.
    * Useful for testing or allowing users to restart the tutorial.
@@ -193,12 +207,14 @@ export const TutorialProvider = ({ children, tutorialSteps }) => {
     achievements,             // The Set of earned achievement IDs
     goToNextStep,             // Function to go to the next step
     goToPreviousStep,         // Function to go to the previous step
+    goToStep,                 // Function to jump to a specific step index
     markStepComplete,         // Function to manually mark a step complete (exposed, but used internally by goToNextStep)
     awardAchievement,         // Function to manually award an achievement (exposed, but used internally by goToNextStep)
     resetProgress,            // Function to reset all progress
     totalSteps: tutorialSteps.length, // Total number of steps (for progress indicators)
     currentStepData: tutorialSteps[currentStepIndex] || null, // The data object for the current step
-    lastAwardedAchievement,   // The ID of the last achievement awarded (for notifier)
+    lastAwardedAchievement,   // The ID of the last achievement awarded (for notifier),
+    tutorialSteps: tutorialSteps, // Expose the full steps array for stepper generation
   };
 
   // --- Provider Return ---

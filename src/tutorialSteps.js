@@ -15,6 +15,7 @@ export const tutorialSteps = [
   // --- Section 1: Introduction & Setup ---
   {
     id: 'welcome',
+    section: 'Setup',
     title: 'Welcome to the Interactive Web Dev Tutorial!',
     content: [
       { type: 'text', value: "👋 Hello there! Ready to dive into the world of modern web development? This interactive tutorial will guide you step-by-step, even if you've never written a line of code before." },
@@ -24,6 +25,7 @@ export const tutorialSteps = [
   },
   {
     id: 'vite-intro',
+    section: 'Setup',
     title: 'What is Vite?',
     content: [
       { type: 'text', value: "First things first, let's talk about Vite (pronounced 'veet'). Vite is a modern build tool for web projects. Think of it as a super-fast assistant that helps you set up your project, run a development server (so you can see your changes live!), and bundle your code efficiently for deployment." },
@@ -32,6 +34,7 @@ export const tutorialSteps = [
   },
   {
     id: 'node-npm-intro',
+    section: 'Setup',
     title: 'Node.js and npm: The Foundation',
     content: [
       { type: 'text', value: "Before we use Vite, we need Node.js. Node.js is a runtime environment that lets you run JavaScript code *outside* of a web browser. Tools like Vite, React's build processes, and many other development utilities are built using Node.js." },
@@ -44,6 +47,7 @@ export const tutorialSteps = [
   },
   {
     id: 'vite-setup-command',
+    section: 'Setup',
     title: 'Creating Your First Project (Simulation)',
     content: [
       { type: 'text', value: "Alright, let's simulate creating a new Vite project with React. Assuming you have Node.js/npm installed, you would open your terminal (like Command Prompt on Windows or Terminal on macOS/Linux) and run the following command:" },
@@ -72,6 +76,7 @@ export const tutorialSteps = [
   },
   {
     id: 'project-structure',
+    section: 'Setup',
     title: 'Exploring the Project Structure',
     content: [
         { type: 'text', value: "After running the command, Vite creates a folder (`my-react-app` in our example) with several files and subfolders. Let's look at the key ones:" },
@@ -100,6 +105,7 @@ export const tutorialSteps = [
   },
   {
     id: 'index-html-explained',
+    section: 'Setup',
     title: 'Understanding `index.html`',
     content: [
         { type: 'text', value: "This is the actual HTML page served to the browser. Unlike traditional setups, your React code isn't directly written here. Instead, Vite injects your JavaScript bundle into this file." },
@@ -124,6 +130,7 @@ export const tutorialSteps = [
   },
   {
     id: 'package-json-explained',
+    section: 'Setup',
     title: 'Understanding `package.json`',
     content: [
         { type: 'text', value: "`package.json` is a crucial file. It acts like an ID card for your project, containing metadata and listing the external packages (dependencies) your project needs." },
@@ -169,6 +176,7 @@ export const tutorialSteps = [
   },
   {
     id: 'npm-install',
+    section: 'Setup',
     title: 'Installing Dependencies: `npm install`',
     content: [
         { type: 'text', value: "As mentioned, `package.json` lists the dependencies, but doesn't contain the actual code. The `node_modules/` folder is where these packages get downloaded." },
@@ -188,6 +196,7 @@ export const tutorialSteps = [
   },
   {
     id: 'npm-run-dev',
+    section: 'Setup',
     title: 'Running the Development Server: `npm run dev`',
     content: [
         { type: 'text', value: "Now for the exciting part! To see your React application live in your browser while you develop, you run the `dev` script defined in your `package.json`:" },
@@ -214,6 +223,7 @@ export const tutorialSteps = [
   // --- Section 2: Git & GitHub ---
   {
     id: 'git-intro',
+    section: 'Git & GitHub',
     title: 'Version Control with Git: What and Why?',
     content: [
         { type: 'text', value: "Imagine you're writing a long essay. You save versions like `essay_v1.doc`, `essay_v2_final.doc`, `essay_final_really_final.doc`. It gets messy, right?" },
@@ -230,6 +240,7 @@ export const tutorialSteps = [
   },
   {
     id: 'git-init',
+    section: 'Git & GitHub',
     title: 'Initializing a Git Repository: `git init`',
     content: [
         { type: 'text', value: "To start tracking your project with Git, you need to initialize a Git repository *inside* your project folder. Open your terminal, navigate to your project directory (`cd my-react-app`), and run:" },
@@ -243,6 +254,7 @@ export const tutorialSteps = [
   },
   {
     id: 'git-workflow-add-commit',
+    section: 'Git & GitHub',
     title: 'Basic Git Workflow: Add & Commit',
     content: [
         { type: 'text', value: "The core Git workflow involves two main steps: staging changes and committing them." },
@@ -268,6 +280,7 @@ export const tutorialSteps = [
   },
    {
     id: 'gitignore-explained',
+    section: 'Git & GitHub',
     title: 'Ignoring Files: `.gitignore`',
     content: [
         { type: 'text', value: "You often have files or folders in your project that you *don't* want Git to track. Examples include:" },
@@ -311,6 +324,7 @@ dist-ssr
   },
   {
     id: 'github-intro',
+    section: 'Git & GitHub',
     title: 'What is GitHub?',
     content: [
         { type: 'text', value: "So far, Git has been tracking your project history *locally* on your computer. But what if your computer crashes? Or what if you want to collaborate with others or showcase your project?" },
@@ -327,6 +341,7 @@ dist-ssr
   },
   {
     id: 'github-create-repo',
+    section: 'Git & GitHub',
     title: 'Creating a GitHub Repository',
     content: [
         { type: 'text', value: "To store your project on GitHub, you first need a GitHub account (it's free!). Then, you create a new 'repository' (often called a 'repo') on the GitHub website." },
@@ -344,6 +359,7 @@ dist-ssr
   },
   {
     id: 'github-connect-push',
+    section: 'Git & GitHub',
     title: 'Connecting Local Repo to GitHub & Pushing',
     content: [
         { type: 'text', value: "Once your empty repository is created on GitHub, it will give you instructions. The key steps are to tell your local Git repository where the remote GitHub repository lives and then 'push' your local commits to GitHub." },
@@ -374,6 +390,7 @@ dist-ssr
   // --- Section 3: Deployment with Netlify ---
   {
     id: 'netlify-intro',
+    section: 'Deployment',
     title: 'Deployment: What is Netlify?',
     content: [
         { type: 'text', value: "Okay, your code is on GitHub, but how do you make your website live on the internet for anyone to visit?" },
@@ -391,6 +408,7 @@ dist-ssr
   },
   {
     id: 'netlify-deploy',
+    section: 'Deployment',
     title: 'Deploying to Netlify from GitHub',
     content: [
         { type: 'text', value: "Deploying with Netlify is mostly done through their website." },
@@ -414,6 +432,7 @@ dist-ssr
   },
   {
     id: 'netlify-auto-deploy',
+    section: 'Deployment',
     title: 'Automatic Deployments',
     content: [
         { type: 'text', value: "The best part about the Netlify/GitHub setup is **automatic deployments**." },
@@ -421,53 +440,10 @@ dist-ssr
     ]
   },
 
-  // --- Section 4: CLI Simulation (Placeholder) ---
-  {
-    id: 'cli-simulation-intro',
-    title: 'Simulating Feature Addition with a CLI',
-    content: [
-        { type: 'text', value: "As projects grow, developers often create small command-line interface (CLI) tools or scripts to automate repetitive tasks, like creating new components or pages with boilerplate code." },
-        { type: 'text', value: "We won't build a real CLI here, but we'll simulate how one might work to add a new 'About' page component to our project." }
-    ]
-  },
-   {
-    id: 'cli-simulation-example',
-    title: 'Example: Adding an About Page',
-    content: [
-        { type: 'text', value: "Imagine we had a script we could run like this:" },
-        { type: 'simulated-terminal', command: 'npm run generate:page AboutPage', output: [
-            'Generating page component: AboutPage...',
-            'Created: src/components/AboutPage.jsx',
-            'Created: src/styles/AboutPage.css (Optional)',
-            'Done.'
-          ]
-        },
-        { type: 'text', value: "This simulated command would create the following basic component file:" },
-        { type: 'code', language: 'jsx', code:
-`// src/components/AboutPage.jsx
-import React from 'react';
-// Optional: import './../styles/AboutPage.css';
-
-const AboutPage = () => {
-  return (
-    <div>
-      <h2>About Us</h2>
-      <p>This is the about page content.</p>
-    </div>
-  );
-};
-
-export default AboutPage;`
-        },
-        { type: 'text', value: "You would then import and use this `AboutPage` component within your main `App.jsx` or routing setup (if you added React Router)." },
-        { type: 'text', value: "This simulation shows how CLIs can streamline development by generating standard code structures." }
-    ],
-    achievement: 'CLI_SIMULATOR'
-  },
-
   // --- Final Step ---
    {
     id: 'whats-next',
+    section: 'Conclusion',
     title: "Congratulations & What's Next?",
     content: [
         { type: 'text', value: "🎉 You've reached the end of this interactive tutorial! You've learned about:" },
@@ -503,5 +479,4 @@ export const achievementsList = {
   'GIT_COMMITTER': { name: 'Git Committer', description: 'Made your first simulated commit!', icon: '💾' },
   'GITHUB_PUSHER': { name: 'GitHub Hero', description: 'Pushed your project to GitHub (simulation)!', icon: '☁️' },
   'NETLIFY_DEPLOYER': { name: 'Netlify Ninja', description: 'Deployed your app to the web (simulation)!', icon: '🌐' },
-  'CLI_SIMULATOR': { name: 'CLI Simulator', description: 'Simulated adding a feature via CLI!', icon: '💻' },
 };
