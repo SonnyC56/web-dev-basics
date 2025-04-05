@@ -1,0 +1,8 @@
+/* App-specific styles will go here */
+
+/* Example: Basic centering for the main content area */
+.app-container {
+  max-width: 960px; /* Adjust as needed */
+  margin: 2rem auto;
+  padding: 1rem;
+}
